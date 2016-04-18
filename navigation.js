@@ -3,11 +3,13 @@ $(document).ready(function() {
     // jQuery methods go here...
 
 	$('#home_').click(function() {
-		$('html,body').animate({scrollTop: $("#header").offset().top}, 1500);
+		$('html,body').animate({scrollTop: 0}, 1500);
 	});
 
 	$('#about_').click(function() {
-		$('html,body').animate({scrollTop: $("#about").offset().top}, 1500);
+		var offset = $("#about").offset().top - 150;
+		console.log(offset);
+		$('html,body').animate({scrollTop: offset}, 1500);
 	});
 
 	$('#contact_').click(function() {
@@ -36,9 +38,10 @@ $(document).ready(function() {
 
 	$(document).scroll(function () {
         var scroll = $(this).scrollTop();
+        //console.log(scroll);
         var topDist = $("#header").position();
         if (scroll > topDist.top) {
-            $('#header').css({"position":"fixed","top":"0", "width": "700px"});
+            $('#header').css({"position":"fixed","top":"0", "width": "700px", "background-color": "white", "padding-top": "10px"});
         } else {
             $('#header').css({"position":"static","top":"auto", "width": "700px"});
         }

@@ -3,7 +3,7 @@ $(document).ready(function() {
     // jQuery methods go here...
 
 	$('#home_').click(function() {
-		$('html,body').animate({scrollTop: -11}, 1500);
+		$('html,body').animate({scrollTop: 0}, 1500);
 	});
 
 	var prevAboutOffset = 0;

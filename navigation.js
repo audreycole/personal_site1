@@ -6,7 +6,6 @@ $(document).ready(function() {
 		$('html,body').animate({scrollTop: 0}, 1500);
 	});
 
-	var prevAboutOffset = 0;
 	$('#about_').click(function() {
 		$('html,body').animate({scrollTop: $("#about").offset().top}, 1500);
 	});
@@ -21,9 +20,9 @@ $(document).ready(function() {
         //console.log(scroll);
         var topDist = $("#header").position();
         if (scroll > topDist.top) {
-            $('#header').css({"position":"fixed","top":"0", "width": "700px", "background-color": "white", "padding-top": "10px"});
+            $('#header').css({"position":"fixed","top":"auto", "left": "30%"});
         } else {
-            $('#header').css({"position":"static","top":"auto", "width": "700px"});
+            $('#header').css({"position":"static","top":"auto"});
         }
     });
 

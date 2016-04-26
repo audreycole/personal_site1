@@ -1,8 +1,42 @@
 /* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+.container {
+  /*padding-top: 20px;
+  padding-bottom: 20px; */
+
+  background-color: #9771e3;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  overflow: hidden;
+  background: linear-gradient(316deg, #ffdf79, #ed747f, #e371d4, #8d5993, #9771e3);
+  background-size: 600% 600%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+
+  -webkit-animation: gradientShift 18s ease infinite;
+  -moz-animation: gradientShift 18s ease infinite;
+  animation: gradientShift 18s ease infinite; 
 }
+/* color changing animations */
+@-webkit-keyframes gradientShift {
+  0%{background-position:24% 0;}
+  50%{background-position:77% 100%;}
+  100%{background-position:24% 0;}
+}
+@-moz-keyframes gradientShift {
+  0%{background-position:24% 0;}
+  50%{background-position:77% 100%;}
+  100%{background-position:24% 0;}
+}
+@keyframes gradientShift {
+  0%{background-position:24% 0;}
+  50%{background-position:77% 100%;}
+  100%{background-position:24% 0;}
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -10,6 +44,7 @@ body {
 .footer {
   padding-right: 15px;
   padding-left: 15px;
+  width: 40%;
 }
 
 /* Custom page header */
@@ -31,12 +66,7 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
+
 .container-narrow > hr {
   margin: 30px 0;
 }
@@ -60,22 +90,29 @@ body {
   }
 }
 
-.fixed {
-    position: fixed;
-    width: 700px;
-    z-index: 1;
-    background: #000;
-    margin-top: 0;
-    -webkit-transition: all .2s ease;
-    -moz-transition: all .2s ease;
-    -ms-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
+.top {
+  height: 500px;
 }
 
+.middle {
+  height: 700px;
+}
 
-/* different divs */
-.top {
+.bottom {
+  height: 700px;
+}
+
+#github {
+  height: 150px;
+  width: 200px;
+}
+
+#linkedin {
+  height: 200px;
+  width: 200px;
+}
+
+/*.top {
     height: 500px;
     background-image: url("art5.jpg");
 }
@@ -84,13 +121,13 @@ body {
     height: 700px;
     background: LightSkyBlue;
 }
-
-.bottom {
+*/
+/*.bottom {
     height: 700px;
-    background: LightSkyBlue; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(LightSkyBlue, blue); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(LightSkyBlue, blue); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(LightSkyBlue, blue); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(LightSkyBlue, blue); /* Standard syntax */
-}
+    /background: LightSkyBlue; 
+    background: -webkit-linear-gradient(LightSkyBlue, blue); 
+    background: -o-linear-gradient(LightSkyBlue, blue); 
+    background: -moz-linear-gradient(LightSkyBlue, blue); 
+    background: linear-gradient(LightSkyBlue, blue);
+}*/
 

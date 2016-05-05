@@ -51,6 +51,7 @@
 .header {
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
+  z-index = 1;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -65,7 +66,6 @@
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
-
 
 .container-narrow > hr {
   margin: 30px 0;
@@ -112,22 +112,34 @@
   width: 200px;
 }
 
-/*.top {
-    height: 500px;
-    background-image: url("art5.jpg");
+#cloud1 {
+  position: absolute;
+  top: 350px;
+  left: 100px;
 }
 
-.middle {
-    height: 700px;
-    background: LightSkyBlue;
+#cloud2 {
+  position: absolute;
+  top: 312px;
+  left: 421px;
 }
-*/
-/*.bottom {
-    height: 700px;
-    /background: LightSkyBlue; 
-    background: -webkit-linear-gradient(LightSkyBlue, blue); 
-    background: -o-linear-gradient(LightSkyBlue, blue); 
-    background: -moz-linear-gradient(LightSkyBlue, blue); 
-    background: linear-gradient(LightSkyBlue, blue);
-}*/
+
+#cloud3 {
+  position: absolute;
+  left: 400px;
+  top: 400px;
+}
+#cloud4 {
+  opacity: 1;
+  position: absolute;
+  left: 200px;
+  top: 400px;
+}
+#cloud5 {
+  opacity: 1;
+  position: absolute;
+  left: 100px;
+  width: 800px;
+  top: 300px;
+}
 

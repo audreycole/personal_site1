@@ -2,9 +2,16 @@ $(document).ready(function() {
 
     // jQuery methods go here...
 
-	$('#home_').click(function() {
-		$('html,body').animate({scrollTop: 0}, 1500);
+	$('#home_1').click(function() {
 		console.log("clicked home!");
+		$('html,body').animate({scrollTop: 0}, 1500);
+		
+	});
+
+	$('#home_2').click(function() {
+		console.log("clicked home!");
+		$('html,body').animate({scrollTop: 0}, 1500);
+		
 	});
 
 	$('#about_').click(function() {
@@ -30,7 +37,7 @@ $(document).ready(function() {
 	});
 
 
-	$(document).scroll(function () {
+	/*$(document).scroll(function () {
 
         var scroll = $(this).scrollTop();
         
@@ -40,9 +47,7 @@ $(document).ready(function() {
         } else {
             $('#header').css({"position":"static","top":"auto"});
         }
-    });
-
-
+    });*/
 
 });
 
